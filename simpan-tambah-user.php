@@ -1,8 +1,10 @@
 <?php
+// ambil data dari koneksi
  include_once 'lib/koneksi.php';
  
  $POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_SPECIAL_CHARS);
  
+// code untuk simpan array
  if(isset($POST['simpan'])){
 	 $params = array(
 		':id_user' => $POST['id_user'],
